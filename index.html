@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="shortcut icon" href="img/favicon.ico">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
@@ -97,6 +98,30 @@
       .footer a {
         color: #ccccff;
       }
+      .flex-video {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 67.5%;
+        height: 0;
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+       
+      .flex-video.widescreen { padding-bottom: 57.25%; }
+      .flex-video.vimeo { padding-top: 0; }
+       
+      .flex-video iframe,
+      .flex-video object,
+      .flex-video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+        .flex-video { padding-top: 0; }
+      }
     </style>
  </head>
    <body>
@@ -133,19 +158,21 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>iJam</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">"i" meaning i and "jam" meaning ham</p>
         </div>
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <div class="flex-video widescreen" > <!-- style="margin: 0 auto;text-align:center;" -->
+            <iframe allowfullscreen="" src="http://player.vimeo.com/video/27329589?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"  frameborder="0" webkitallowfullscreen allowfullscreen></iframe>
+          </div>
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -200,21 +227,11 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="img/ijam.caja.jpg">
         </div>
         <div class="span5 copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            iJam is much more than ham: it’s the perfect fusion of two ideas: the Spanish traditional ham and the iPhone. What started as a Christmas mailing to 700 people became what MacWorld called “the viral phenomena of the year”, 1,200,000 visits (more than apple.es over the same period), 185,000 references in Google, display in the news and new contracts for the agency.
           </p>
         </div>
       </div>
@@ -222,21 +239,15 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
+            We used the opportunity of the Christmas Greetings to demonstrate the creative capacity of our agency to our clients, prospects and friends, in order to get some new contracts.
+            A research determined the most valued presents over Christmas in Spain were either a ham for the most traditional people or an iPhone for the modern.
+            Why not please both profiles? Why not combine both concepts?
+            iHam is more than ham: it's the perfect fusion of two ideas, the Spanish ham and the iPhone.
+            Thus the IHam was born: 'i' as in I and 'Ham' as in Ham.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
+          <img class="img-polaroid" src="img/ijam-int.jpg">
         </div>
       </div>
 
@@ -283,8 +294,8 @@
       <div class="row-fluid footer">
         <div class="span12">
           <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
+            the <a href="http://www.shackletongroup.com">
+              shackletongroup
             </a>, without all the cruft that would otherwise be
             put at the bottom of the page.</p>
         </div>
